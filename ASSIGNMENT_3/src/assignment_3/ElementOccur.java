@@ -22,7 +22,7 @@ protected HashMap<Integer,Integer> printSortedOccur(int arr[],int n){
 	List<Map.Entry<Integer, Integer> > list =new LinkedList<Map.Entry<Integer, Integer> >(elementOccur(arr,n).entrySet());
                
  
-        // Sort the list
+        
         Collections.sort(list, new Comparator<Map.Entry<Integer, Integer> >() {
             public int compare(Map.Entry<Integer, Integer> obj1,
                                Map.Entry<Integer, Integer> obj2)
@@ -31,10 +31,10 @@ protected HashMap<Integer,Integer> printSortedOccur(int arr[],int n){
             }
         });
          
-        // put data from sorted list to hashmap
+        
         HashMap<Integer, Integer> temp = new LinkedHashMap<Integer, Integer>();
-        for (Map.Entry<Integer, Integer> aa : list) {
-            temp.put(aa.getKey(), aa.getValue());
+        for (Map.Entry<Integer, Integer> imap : list) {
+            temp.put(imap.getKey(), imap.getValue());
         }
         return temp;
 }
