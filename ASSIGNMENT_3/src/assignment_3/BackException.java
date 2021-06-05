@@ -23,7 +23,8 @@ public class BackException {
 		     break;      
 		    }      
 		   }      
-		   if(flag==0 && n%2==1)  { throw new InvalidNumberException("Number is invalid"); 
+		   if(flag==0 && n%2==1)  { 
+			   throw new InvalidNumberException("Number is invalid"); 
 		   
 		   } 
 		   }
